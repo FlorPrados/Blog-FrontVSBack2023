@@ -1,0 +1,131 @@
+html{
+    font-family: 'Itim', cursive;
+}
+body {
+    background-image: url('img/backgroungclaro.avif');
+}
+
+
+header {
+    background-image: URL("img/gg.jpg");
+    color: azure;
+    padding: 3rem 2rem;
+    
+}
+#titulo {
+    font-size: 3rem;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h5 {
+    font-size: medium;
+    font-style: oblique;
+}
+
+
+img {
+    display: block;
+    margin: auto;
+    width: 600px;
+    }
+
+#imgfront {
+    height: 400px;
+}
+
+.secciones {     /*centrando las secciones*/
+    width: 1000px;
+    margin: 0 auto;
+}
+
+section article {
+    background-color: rgb(141, 194, 191);
+    margin: 1rem 0;    /* primer rem vertical, 2 horizontal */
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;    /*separo un poco el titulo con el borde que hice de c/articulo*/
+
+}
+
+section article h2, section article p, section article h4{
+    margin: 1rem;
+}
+section article h4{
+    color:rgb(212, 200, 25);
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+
+
+li::marker {
+    color:rgb(7, 119, 95);
+    font-size: 150%;
+}
+
+table {
+    margin: 2rem;
+    width: 30%;  /*indico que la tabla ocupa el 50% de la pagina web*/
+    border-collapse: collapse; 
+    background-color: rgb(220, 231, 228);
+}
+th, td {
+    border: solid 1px rgb(59, 87, 78);
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(105, 177, 155);
+}
+
+td {
+    cursor: pointer;
+    text-align: center;
+}
+tr:nth-child(even) {      /*Selecciona las celdas inpares*/
+    background-color:rgb(204, 224, 219); ;
+}
+
+tr:hover {  /*para q cuando pase el mouse por encima de estas celdas, se cambien de color*/
+    background-color: rgb(197, 199, 226);
+    color:aliceblue;   /* Ilumina las celdas */
+    transform: scale(1.01);
+}
+
+section article {    /* para agrandar las secciones cuando pasemos mouse. Aca indico velocidad*/
+    transition: all 300ms;
+    position: relative;
+}
+section article:hover {
+    box-shadow: 0 0.5rem 0.6rem rgb(23, 98, 100);
+    /*cuanto se desplazará la sombra: hacia la derecha, abajo, cuanta difuminacion y color*/ 
+    transform: scale(1.05);   /*Cuanto se agrandará la seccion*/
+}
+footer {
+    background-color: rgba(27, 74, 77, 0.822);
+    color:azure;
+    padding: 1rem;
+}
+footer section {
+    float:right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color:rgb(198, 206, 250)
+}
+footer a:hover {
+    color:rgb(137, 153, 243)
+}
+
+
+
+/* RECOURSES
+https://fonts.google.com 
+
+https://www.youtube.com/@BastianAndresWeb/videos
+
+
+*/
